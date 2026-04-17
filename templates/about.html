@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}О нас{% endblock %}
+
+{% block content %}
+<div class="page">
+    <h1>О нас</h1>
+    <div class="about">
+        <p>Работаем с 2015 года. Отремонтировали более 10 000 устройств.</p>
+        
+        <h2>Наша команда</h2>
+        <div class="team">
+            {% for member in team %}
+            <div class="team-card">
+                <h3>{{ member.name }}</h3>
+                <p>{{ member.role }}</p>
+                <p>{{ member.experience }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock %}

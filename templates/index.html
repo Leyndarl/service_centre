@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block title %}Главная{% endblock %}
+
+{% block content %}
+<div class="hero">
+    <h1>Профессиональный ремонт техники</h1>
+    <p>Быстро, качественно, с гарантией</p>
+    <a href="{{ url_for('contacts') }}" class="btn">Записаться</a>
+</div>
+
+<div class="features">
+    <div class="feature">
+        <div class="icon">⚡</div>
+        <h3>Быстро</h3>
+        <p>Ремонт за 1-2 часа</p>
+    </div>
+    <div class="feature">
+        <div class="icon">🔧</div>
+        <h3>Качественно</h3>
+        <p>Оригинальные детали</p>
+    </div>
+    <div class="feature">
+        <div class="icon">💯</div>
+        <h3>Гарантия</h3>
+        <p>До 1 года</p>
+    </div>
+</div>
+{% endblock %}

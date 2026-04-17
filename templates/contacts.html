@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %}Контакты{% endblock %}
+
+{% block content %}
+<div class="page">
+    <h1>Контакты</h1>
+    <div class="contacts-grid">
+        <div class="info">
+            <p>📞 +7 (999) 123-45-67</p>
+            <p>✉️ info@service.ru</p>
+            <p>📍 Москва, ул. Примерная, 123</p>
+            <p>⏰ Пн-Сб: 10:00-20:00</p>
+        </div>
+        
+        <div class="form">
+            <h2>Оставить заявку</h2>
+            <form method="POST">
+                <input type="text" name="name" placeholder="Имя" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <textarea name="message" placeholder="Сообщение" rows="5" required></textarea>
+                <button type="submit" class="btn">Отправить</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

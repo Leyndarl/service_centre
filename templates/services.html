@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}Услуги{% endblock %}
+
+{% block content %}
+<div class="page">
+    <h1>Наши услуги</h1>
+    <div class="services-grid">
+        {% for service in services %}
+        <div class="service-card">
+            <div class="icon">{{ service.icon }}</div>
+            <h3>{{ service.name }}</h3>
+            <p class="price">{{ service.price }}</p>
+            <p class="time">⏱ {{ service.time }}</p>
+            <button class="btn">Заказать</button>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
